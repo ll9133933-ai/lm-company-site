@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumen Odontologia · Projeto conceito LM Company</title>
+<meta name="description" content="Lumen Odontologia: tratamentos, guia para escolher o tratamento certo, equipe e agendamento de avaliação pelo WhatsApp. Projeto conceito da LM Company.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="../../assets/config.js"></script>
+<script src="../shared/demo.js"></script>
+<style>
+:root{--bg:#F7FAFB;--paper:#fff;--ink:#0C2233;--ink2:#3C5163;--mute:#6F8191;--line:#E1E9EE;--blue:#0E5C8C;--blue2:#0A4A72;--mint:#5ED3B5;--mint2:#E3F7F1;--ease:cubic-bezier(.23,1,.32,1);--pad:clamp(18px,4.5vw,64px);--d:"Urbanist",system-ui,sans-serif;--s:"Figtree",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--s);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}button{font:inherit;color:inherit}a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3{margin:0;font-family:var(--d);font-weight:700;letter-spacing:-.03em;line-height:1.02;text-wrap:balance}
+h2{font-size:clamp(34px,4.6vw,58px)}h2 span{color:var(--blue)}
+.ey{font:700 12.5px/1 var(--s);letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 24px;border-radius:999px;border:0;background:var(--blue);color:#fff;font:600 15px/1 var(--s);cursor:pointer;text-decoration:none;transition:transform .16s var(--ease),background-color .2s}
+.btn:active{transform:scale(.97)}@media (hover:hover){.btn:hover{background:var(--blue2)}}
+.btn.w{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.top{position:sticky;top:0;z-index:50;background:rgba(247,250,251,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font:800 22px/1 var(--d);letter-spacing:-.04em;text-decoration:none}
+.logo svg{width:34px;height:34px}
+.nav{display:flex;gap:4px;margin-left:auto}.nav a{text-decoration:none;font-size:14.5px;font-weight:500;color:var(--ink2);padding:8px 13px;border-radius:999px}
+@media (hover:hover){.nav a:hover{background:#fff}}
+.top .btn{height:44px;font-size:14px}
+@media (max-width:900px){.nav{display:none}.top .btn{margin-left:auto}}
+/* hero */
+.hero{padding:clamp(30px,5vw,60px) 0 clamp(40px,6vw,80px)}
+.hgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,60px);align-items:center}
+.hero h1{font-size:clamp(46px,6.4vw,88px);margin:18px 0}
+.hero h1 span{color:var(--blue);font-style:italic;font-weight:600}
+.hero p.l{color:var(--ink2);font-size:18px;max-width:44ch}
+.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.proof{display:flex;align-items:center;gap:14px;margin-top:30px;font-size:14px;color:var(--ink2)}
+.av{display:flex}.av img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:3px solid var(--bg);margin-left:-10px}.av img:first-child{margin-left:0}
+.stars{color:#F2A900;letter-spacing:2px}
+.hpic{position:relative}
+.hpic .main{border-radius:32px;aspect-ratio:4/4.4;object-fit:cover;width:100%}
+.float{position:absolute;background:#fff;border-radius:20px;padding:14px 16px;box-shadow:0 24px 50px -20px rgba(12,34,51,.35);display:flex;gap:12px;align-items:center;font-size:13.5px}
+.float b{display:block;font:700 17px/1.1 var(--d)}
+.float .ic{width:42px;height:42px;border-radius:12px;background:var(--mint2);display:grid;place-items:center;color:var(--blue)}
+.float.a{left:-24px;bottom:12%}.float.b{right:-14px;top:9%}
+@media (max-width:900px){.hgrid{grid-template-columns:1fr}.float.a{left:12px}.float.b{right:12px}}
+.insur{display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px;padding:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--mute);font:700 16px/1 var(--d)}
+.insur span:first-child{font:600 13px var(--s);color:var(--ink2)}
+/* treatments */
+.treat{padding:clamp(70px,9vw,120px) 0}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.tc{background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 0 0 1px var(--line);display:flex;flex-direction:column;transition:transform .45s var(--ease),box-shadow .3s}
+@media (hover:hover){.tc:hover{transform:translateY(-4px);box-shadow:0 0 0 1px var(--line),0 30px 50px -30px rgba(12,34,51,.4)}}
+.tc img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.tc .b{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tc h3{font-size:22px}.tc p{color:var(--mute);font-size:15px;flex:1}
+.tc .from{font-size:13.5px;color:var(--ink2)}.tc .from b{color:var(--blue)}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.mc{background:#fff;border-radius:20px;box-shadow:0 0 0 1px var(--line);padding:20px;display:flex;gap:14px;align-items:flex-start}
+.mc .ic{flex:none;width:44px;height:44px;border-radius:14px;background:var(--mint2);display:grid;place-items:center;color:var(--blue)}
+.mc b{display:block;font:700 17px/1.2 var(--d);margin-bottom:4px}.mc span{color:var(--mute);font-size:14px}
+@media (max-width:900px){.tgrid,.mini{grid-template-columns:1fr}}
+/* finder */
+.finder{padding:0 0 clamp(70px,9vw,120px)}
+.fbox{background:var(--ink);color:#fff;border-radius:32px;padding:clamp(26px,5vw,64px);display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,60px)}
+.fbox h2 span{color:var(--mint)}.fbox p{color:rgba(255,255,255,.7);margin-top:14px}
+.q{margin-bottom:20px}.q>b{display:block;font:600 14px var(--s);color:rgba(255,255,255,.65);margin-bottom:10px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{border:0;border-radius:999px;padding:11px 16px;background:rgba(255,255,255,.08);color:#fff;font-weight:600;font-size:14px;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);transition:background-color .2s,color .2s,transform .16s var(--ease)}
+.opt:active{transform:scale(.96)}.opt[aria-pressed="true"]{background:var(--mint);color:var(--ink);box-shadow:none}
+.res{background:#fff;color:var(--ink);border-radius:22px;padding:22px;display:grid;gap:12px;transition:opacity .3s,transform .4s var(--ease)}
+.res.swap{opacity:0;transform:translateY(8px)}
+.res h3{font-size:26px}.res p{color:var(--ink2);margin:0}
+.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.meta div{background:var(--bg);border-radius:14px;padding:12px}.meta small{display:block;color:var(--mute);font-size:12px;font-weight:600}.meta b{font:700 18px/1.2 var(--d)}
+.urg{display:none;background:#FFF1E6;color:#9A4A0B;border-radius:12px;padding:10px 12px;font-size:14px}.urg.on{display:block}
+.fbox>*{min-width:0}@media (max-width:900px){.fbox{grid-template-columns:1fr}}@media (max-width:520px){.meta{grid-template-columns:1fr 1fr}.meta div:first-child{grid-column:1/-1}}
+/* team */
+.team{padding:0 0 clamp(70px,9vw,120px)}
+.tm{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}
+.doc{background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 0 0 1px var(--line)}
+.doc img{aspect-ratio:4/5;object-fit:cover;width:100%;background:var(--mint2)}
+.doc div{padding:16px 18px}.doc b{display:block;font:700 18px/1.2 var(--d)}.doc span{color:var(--mute);font-size:14px}
+@media (max-width:900px){.tm{grid-template-columns:1fr 1fr}}
+/* testimonials */
+.tes{padding:0 0 clamp(70px,9vw,120px)}
+.tgrid2{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.t{background:#fff;border-radius:22px;padding:24px;box-shadow:0 0 0 1px var(--line);display:flex;flex-direction:column;gap:14px}
+.t p{margin:0;color:var(--ink2)}.t b{font:700 15px var(--d)}
+@media (max-width:900px){.tgrid2{grid-template-columns:1fr}}
+/* booking */
+.book{padding:0 0 clamp(70px,9vw,120px)}
+.bbox{background:#fff;border-radius:32px;box-shadow:0 0 0 1px var(--line),0 40px 80px -50px rgba(12,34,51,.5);display:grid;grid-template-columns:.85fr 1.15fr;overflow:hidden}
+.bimg{position:relative;background:var(--mint2);min-height:420px}.bimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bform{padding:clamp(24px,4vw,48px);display:grid;gap:18px}
+.lbl{font:700 12.5px var(--s);letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-bottom:8px;display:block}
+.days{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.day{flex:none;width:64px;border:0;border-radius:16px;padding:10px 0;background:var(--bg);box-shadow:inset 0 0 0 1px var(--line);cursor:pointer;text-align:center;transition:background-color .2s,color .2s}
+.day small{display:block;font-size:12px;color:var(--mute);font-weight:600;text-transform:uppercase}.day b{font:700 22px/1.1 var(--d)}
+.day[aria-pressed="true"]{background:var(--blue);color:#fff;box-shadow:none}.day[aria-pressed="true"] small{color:rgba(255,255,255,.75)}
+.day:disabled{opacity:.4;cursor:not-allowed}
+.hrs{display:flex;flex-wrap:wrap;gap:8px}
+.hr{border:0;border-radius:12px;padding:10px 14px;background:var(--bg);box-shadow:inset 0 0 0 1px var(--line);font-weight:600;font-size:14px;cursor:pointer}
+.hr[aria-pressed="true"]{background:var(--ink);color:#fff;box-shadow:none}.hr:disabled{text-decoration:line-through;opacity:.45;cursor:not-allowed}
+.in{width:100%;height:52px;border-radius:14px;border:1px solid var(--line);padding:0 16px;font:500 15.5px var(--s);background:#fff;color:var(--ink)}
+.in:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 3px rgba(14,92,140,.12)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:900px){.bbox{grid-template-columns:1fr}.bimg{min-height:240px}}@media (max-width:520px){.two{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line);padding:30px 0 100px;color:var(--mute);font-size:14px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.is-preview .lm-badge{display:none}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#"><svg viewBox="0 0 36 36"><rect width="36" height="36" rx="11" fill="#0E5C8C"/><path d="M11 12c0-2 2-3.5 4-3 1.3.3 2 .8 3 .8s1.7-.5 3-.8c2-.5 4 1 4 3 0 3-1 5-1.6 8-.5 3-1 6-2.6 6-1.4 0-1.3-4-2.8-4s-1.4 4-2.8 4c-1.6 0-2.1-3-2.6-6-.6-3-1.6-5-1.6-8Z" fill="#fff"/><circle cx="26" cy="9" r="2.4" fill="#5ED3B5"/></svg>Lumen</a>
+  <nav class="nav"><a href="#tratamentos">Tratamentos</a><a href="#guia">Qual tratamento?</a><a href="#equipe">Equipe</a><a href="#agendar">Agendar</a></nav>
+  <a class="btn" href="#agendar">Agendar avaliação</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="hgrid">
+    <div><span class="ey">Clínica odontológica · CRO-RJ 0000</span>
+      <h1>Sorrir sem pensar <span>duas vezes.</span></h1>
+      <p class="l">Avaliação completa, plano de tratamento claro e uma equipe que explica cada etapa. Agende pelo site em menos de um minuto.</p>
+      <div class="acts"><a class="btn" href="#agendar">Agendar avaliação</a><a class="btn w" href="#guia">Descobrir meu tratamento</a></div>
+      <div class="proof"><div class="av"><img src="img/doctor-2.webp" alt=""><img src="img/doctor-3.webp" alt=""><img src="img/doctor-4.webp" alt=""></div><div><span class="stars">★★★★★</span><br>4,9 de média em 320 avaliações no Google</div></div></div>
+    <div class="hpic"><img class="main" src="img/blog-1.webp" alt="Paciente sorrindo durante consulta com a dentista" fetchpriority="high">
+      <div class="float a"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span>Próximo horário<b id="next">Amanhã, 9h</b></span></div>
+      <div class="float b"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span><span>Esterilização<b>100% rastreada</b></span></div></div>
+  </div>
+</div>
+<div class="wrap" style="margin-top:clamp(40px,6vw,70px)"><div class="insur"><span>Atendemos os convênios</span><span>Amil Dental</span><span>OdontoPrev</span><span>SulAmérica</span><span>Bradesco Dental</span><span>Unimed Odonto</span></div></div>
+</section>
+
+<section class="treat" id="tratamentos"><div class="wrap">
+  <span class="ey">Tratamentos</span><h2 style="margin-top:12px">Cuidado completo, <span>do check-up ao implante.</span></h2>
+  <div class="tgrid">
+    <article class="tc rv"><img src="img/blog-3.webp" alt="Limpeza dental" loading="lazy"><div class="b"><h3>Limpeza e prevenção</h3><p>Remoção de tártaro, polimento e aplicação de flúor. Recomendado a cada 6 meses.</p><span class="from">A partir de <b>R$ 180</b></span></div></article>
+    <article class="tc rv"><img src="img/blog-1.webp" alt="Clareamento dental" loading="lazy" style="object-position:70% 50%"><div class="b"><h3>Clareamento</h3><p>Clareamento em consultório ou caseiro com moldeira, com acompanhamento da sensibilidade.</p><span class="from">A partir de <b>R$ 890</b></span></div></article>
+    <article class="tc rv"><img src="img/blog-2.webp" alt="Dentista durante procedimento" loading="lazy"><div class="b"><h3>Implantes</h3><p>Planejamento com tomografia, implante de titânio e coroa em porcelana.</p><span class="from">A partir de <b>R$ 2.900</b></span></div></article>
+  </div>
+  <div class="mini">
+    <div class="mc rv"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h16M4 16h16M8 4v16M16 4v16"/></svg></span><div><b>Ortodontia e alinhadores</b><span>Aparelho fixo, autoligado ou alinhadores transparentes.</span></div></div>
+    <div class="mc rv"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18"/></svg></span><div><b>Canal e urgência</b><span>Atendimento de dor no mesmo dia, em horário comercial.</span></div></div>
+    <div class="mc rv"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12a7 7 0 0 1 14 0c0 4-3 8-7 8s-7-4-7-8Z"/></svg></span><div><b>Odontopediatria</b><span>Primeira consulta das crianças com calma e sem medo.</span></div></div>
+  </div>
+</div></section>
+
+<section class="finder" id="guia"><div class="wrap"><div class="fbox rv">
+  <div><span class="ey" style="color:var(--mint)">Guia rápido</span><h2 style="margin-top:12px">Qual tratamento <span>combina com você?</span></h2><p>Responda duas perguntas e veja uma indicação inicial, com tempo e faixa de investimento. A avaliação na clínica confirma o plano.</p></div>
+  <div>
+    <div class="q"><b>O que você quer melhorar?</b><div class="opts" id="q1"><button class="opt" aria-pressed="true" data-v="cor">A cor dos dentes</button><button class="opt" aria-pressed="false" data-v="alinh">Dentes tortos</button><button class="opt" aria-pressed="false" data-v="falta">Falta um dente</button><button class="opt" aria-pressed="false" data-v="dor">Sinto dor</button><button class="opt" aria-pressed="false" data-v="prev">Só um check-up</button></div></div>
+    <div class="q"><b>Qual sua prioridade?</b><div class="opts" id="q2"><button class="opt" aria-pressed="true" data-v="rap">Rapidez</button><button class="opt" aria-pressed="false" data-v="disc">Discrição</button><button class="opt" aria-pressed="false" data-v="eco">Melhor custo</button></div></div>
+    <div class="res" id="res"></div>
+  </div>
+</div></div></section>
+
+<section class="team" id="equipe"><div class="wrap">
+  <span class="ey">Equipe</span><h2 style="margin-top:12px">Quem vai <span>cuidar de você.</span></h2>
+  <div class="tm">
+    <div class="doc rv"><img src="img/doctor-4.webp" alt="Dra. Helena Duarte" loading="lazy"><div><b>Dra. Helena Duarte</b><span>Clínica geral e estética</span></div></div>
+    <div class="doc rv"><img src="img/doctor-3.webp" alt="Dr. Rafael Moura" loading="lazy"><div><b>Dr. Rafael Moura</b><span>Implantodontia</span></div></div>
+    <div class="doc rv"><img src="img/doctor-1.webp" alt="Dr. André Lopes" loading="lazy"><div><b>Dr. André Lopes</b><span>Ortodontia</span></div></div>
+    <div class="doc rv"><img src="img/doctor-2.webp" alt="Dra. Camila Rocha" loading="lazy"><div><b>Dra. Camila Rocha</b><span>Odontopediatria</span></div></div>
+  </div>
+</div></section>
+
+<section class="tes"><div class="wrap">
+  <span class="ey">Pacientes</span><h2 style="margin-top:12px">O que dizem <span>depois da consulta.</span></h2>
+  <div class="tgrid2">
+    <div class="t rv"><span class="stars">★★★★★</span><p>“Tinha pavor de dentista. A Dra. Helena explicou tudo antes de começar e eu nem senti a anestesia.”</p><b>Mariana S.</b></div>
+    <div class="t rv"><span class="stars">★★★★★</span><p>“Fiz o implante com o Dr. Rafael. Orçamento fechado desde o início, sem surpresa no final.”</p><b>Carlos E.</b></div>
+    <div class="t rv"><span class="stars">★★★★★</span><p>“Marquei pelo site às 22h e de manhã já tinham confirmado no WhatsApp. Muito prático.”</p><b>Juliana P.</b></div>
+  </div>
+</div></section>
+
+<section class="book" id="agendar"><div class="wrap"><div class="bbox rv">
+  <div class="bimg"><img src="img/blog-2.webp" alt="Dentista atendendo paciente" loading="lazy" style="object-position:40% 50%"></div>
+  <form class="bform" id="bf" novalidate>
+    <div><span class="ey">Agendamento</span><h2 style="margin-top:10px;font-size:clamp(30px,3.4vw,44px)">Agende sua avaliação.</h2></div>
+    <div><span class="lbl">Dia</span><div class="days" id="days"></div></div>
+    <div><span class="lbl">Horário</span><div class="hrs" id="hrs"></div></div>
+    <div><label class="lbl" for="tr">Motivo</label><select class="in" id="tr"><option>Avaliação geral</option><option>Limpeza</option><option>Clareamento</option><option>Implante</option><option>Ortodontia</option><option>Dor ou urgência</option></select></div>
+    <div class="two"><input class="in" id="nm" placeholder="Seu nome" autocomplete="name"><select class="in" id="cv"><option>Particular</option><option>Amil Dental</option><option>OdontoPrev</option><option>SulAmérica</option><option>Bradesco Dental</option><option>Unimed Odonto</option></select></div>
+    <button class="btn" type="submit">Confirmar pelo WhatsApp</button>
+  </form>
+</div></div></section>
+<footer><div class="wrap"><span>© Lumen Odontologia · Empresa fictícia, projeto conceito da LM Company</span><span>Seg a sex 8h–19h · Sáb 8h–12h</span></div></footer>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const T={
+ cor:{n:'Clareamento dental',d:'Clareia vários tons com segurança. Para rapidez, o de consultório; para economia, o caseiro com moldeira.',t:{rap:['Consultório','1 a 2 sessões','R$ 1.200'],disc:['Caseiro com moldeira','2 a 3 semanas','R$ 890'],eco:['Caseiro com moldeira','2 a 3 semanas','R$ 890']},m:'Clareamento'},
+ alinh:{n:'Ortodontia',d:'Corrige a posição dos dentes e a mordida. Alinhadores são quase invisíveis; aparelho fixo tem o melhor custo.',t:{rap:['Aparelho autoligado','12 a 18 meses','R$ 280/mês'],disc:['Alinhadores transparentes','8 a 18 meses','R$ 6.900'],eco:['Aparelho fixo metálico','18 a 24 meses','R$ 180/mês']},m:'Ortodontia'},
+ falta:{n:'Implante dentário',d:'Repõe o dente com implante de titânio e coroa em porcelana, com aparência e função naturais.',t:{rap:['Implante com carga imediata','1 a 2 meses','R$ 3.900'],disc:['Implante + coroa em porcelana','3 a 4 meses','R$ 3.400'],eco:['Implante + coroa metalocerâmica','3 a 4 meses','R$ 2.900']},m:'Implante'},
+ dor:{n:'Atendimento de urgência',d:'Avaliamos a causa da dor e aliviamos no mesmo dia. Pode ser cárie profunda, canal ou inflamação.',t:{rap:['Urgência no mesmo dia','1 consulta','R$ 250'],disc:['Urgência no mesmo dia','1 consulta','R$ 250'],eco:['Urgência no mesmo dia','1 consulta','R$ 250']},m:'Dor ou urgência',u:1},
+ prev:{n:'Check-up e limpeza',d:'Exame clínico, raio-x se necessário, limpeza e flúor. O jeito mais barato de evitar tratamentos grandes.',t:{rap:['Avaliação + limpeza','1 consulta','R$ 180'],disc:['Avaliação + limpeza','1 consulta','R$ 180'],eco:['Avaliação + limpeza','1 consulta','R$ 180']},m:'Limpeza'}
+};
+let a='cor',b='rap';
+function res(){const r=T[a],x=r.t[b];const el=$('#res');el.classList.add('swap');setTimeout(()=>{el.innerHTML=`<span class="ey">Indicação inicial</span><h3>${r.n}</h3><p>${r.d}</p><div class="urg ${r.u?'on':''}">Está com dor forte agora? Ligue ou mande mensagem: encaixamos no mesmo dia.</div><div class="meta"><div><small>Opção</small><b>${x[0]}</b></div><div><small>Tempo</small><b>${x[1]}</b></div><div><small>A partir de</small><b>${x[2]}</b></div></div><button class="btn" onclick="pick('${r.m}')">Agendar avaliação para ${r.n.toLowerCase()}</button>`;el.classList.remove('swap')},150)}
+$$('#q1 .opt').forEach(o=>o.onclick=()=>{a=o.dataset.v;$$('#q1 .opt').forEach(x=>x.setAttribute('aria-pressed',x===o));res()});
+$$('#q2 .opt').forEach(o=>o.onclick=()=>{b=o.dataset.v;$$('#q2 .opt').forEach(x=>x.setAttribute('aria-pressed',x===o));res()});
+window.pick=m=>{$('#tr').value=m;$('#agendar').scrollIntoView({behavior:'smooth'})};
+res();
+// booking
+const W=['dom','seg','ter','qua','qui','sex','sáb'];const days=[];const d0=new Date();
+for(let i=1;days.length<10;i++){const d=new Date(d0);d.setDate(d0.getDate()+i);if(d.getDay()!==0)days.push(d)}
+let sd=0,sh=null;
+$('#days').innerHTML=days.map((d,i)=>`<button type="button" class="day" aria-pressed="${i===0}" data-i="${i}"><small>${W[d.getDay()]}</small><b>${d.getDate()}</b></button>`).join('');
+function hrs(){const d=days[sd],sat=d.getDay()===6;const H=sat?['8:00','9:00','10:00','11:00']:['8:00','9:00','10:00','11:00','14:00','15:00','16:00','17:00','18:00'];
+ $('#hrs').innerHTML=H.map((h,i)=>{const busy=(d.getDate()*7+i*3)%5===0;return `<button type="button" class="hr" aria-pressed="${h===sh}" ${busy?'disabled':''}>${h}</button>`}).join('')}
+$('#days').onclick=e=>{const b=e.target.closest('.day');if(!b)return;sd=+b.dataset.i;sh=null;$$('.day').forEach(x=>x.setAttribute('aria-pressed',x===b));hrs()};
+$('#hrs').onclick=e=>{const b=e.target.closest('.hr');if(!b||b.disabled)return;sh=b.textContent;$$('.hr').forEach(x=>x.setAttribute('aria-pressed',x===b))};
+hrs();
+(()=>{const d=days[0];$('#next').textContent=(d.getDate()===new Date(Date.now()+864e5).getDate()?'Amanhã':W[d.getDay()]+' '+d.getDate())+', 9h'})();
+$('#bf').onsubmit=e=>{e.preventDefault();if(!sh){lmToast('Escolha um horário');return}const d=days[sd];
+ demoWa(`Olá, Lumen! Quero agendar uma consulta:\nMotivo: ${$('#tr').value}\nDia: ${W[d.getDay()]}, ${d.toLocaleDateString('pt-BR')} às ${sh}\nNome: ${$('#nm').value||'—'}\nAtendimento: ${$('#cv').value}`)};
+</script>
+</body>
+</html>
