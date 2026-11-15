@@ -377,10 +377,15 @@ footer{padding:0 0 calc(40px + env(safe-area-inset-bottom));background:var(--ink
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.reveal-line>span,.fade-in{animation:none;transform:none;opacity:1}.hero h1 .hl path{animation:none;stroke-dashoffset:0}.stackbar div,.float-badge{animation:none}.plate,.layer-panel,.qa .ans{transition:none}}
 </style>
 <script>
-/* Sempre abrir no topo (exceto quando o link pede uma seção, ex.: #projetos) */
+/* Sempre abrir no topo. Só vai direto para uma seção (#projetos) quando a pessoa
+   está voltando de uma demo; nos outros casos limpa o # da barra de endereço. */
 try{if('scrollRestoration' in history)history.scrollRestoration='manual'}catch(e){}
-(function(){function top(){if(location.hash&&location.hash.length>1)return;window.scrollTo(0,0)}
-top();addEventListener('DOMContentLoaded',top);addEventListener('load',function(){top();setTimeout(top,80)});addEventListener('pageshow',top)})();
+(function(){
+  var fromDemo=/\/demos\//.test(document.referrer||'');
+  if(location.hash&&!fromDemo){try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}
+  function top(){if(fromDemo&&location.hash)return;window.scrollTo(0,0)}
+  top();addEventListener('DOMContentLoaded',top);addEventListener('load',function(){top();setTimeout(top,120);setTimeout(top,600)});addEventListener('pageshow',top);
+})();
 </script>
 </head>
 <body>
